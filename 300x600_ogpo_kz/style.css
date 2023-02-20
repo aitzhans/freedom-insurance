@@ -1,0 +1,160 @@
+body,
+body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+}
+
+.container {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  /* top: 100px;
+  left: 200px; */
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fbfbff;
+  border: 1px #363636 solid;
+  background-size: cover;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.el {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.bg {
+  background-color: #fafaff;
+  width: 300px;
+  height: 600px;
+}
+
+
+#car {
+  width: 277px;
+  left: 0px;
+  top: 370px;
+}
+#txt01 {
+  width: 168px;
+  left: 66px;
+  top: 211px;
+}
+#txt02 {
+  width: 202px;
+  left: 49px;
+  top: 266px;
+}
+.shield {
+  width: 28px;
+  height: 31px;
+  left: 22px;
+  top: 206px;
+  /* outline: 1px red solid; */
+  overflow: hidden;
+}
+.shield_inn {
+  width: 28px;
+  left: 0;
+  top: 0;
+}
+#shield02,
+#shield02_tick {
+  top: 299px;
+}
+#shield03,
+#shield03_tick {
+  top: 390px;
+}
+#txt03 {
+  width: 172px;
+  left: 64px;
+  top: 213px;
+}
+#txt04 {
+  width: 203px;
+  left: 64px;
+  top: 305px;
+}
+#txt05 {
+  width: 171px;
+  left: 64px;
+  top: 397px;
+}
+
+
+#logo {
+  width: 162px;
+  left: 69px;
+  top: 32px;
+}
+#phone {
+  width: 13px;
+  left: 107px;
+  top: 129px;
+}
+#phone_num {
+  width: 64px;
+  left: 126px;
+  top: 133px;
+}
+
+#legal {
+  width: 199px;
+  left: 50px;
+  top: 576px;
+}
+
+#txt06 {
+  width: 231px;
+  left: 34px;
+  top: 223px;
+}
+#txt07 {
+  width: 203px;
+  left: 48px;
+  top: 306px;
+}
+#txt08 {
+  width: 144px;
+  left: 78px;
+  top: 402px;
+}
+#txt09 {
+  width: 232px;
+  left: 30px;
+  top: 502px;
+}
+
+
+
+
+
+
+#schirm {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background-color: #fbfbff;
+  background-size: cover;
+  opacity: 1;
+}
