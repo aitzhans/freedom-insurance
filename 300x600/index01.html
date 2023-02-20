@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=600" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="tweenlite_2.0.1_min.js"></script>
+    <script src="cssplugin_2.0.1_min.js"></script>
+    <script src="timelinemax_2.0.1_min.js"></script>
+    <script type="text/javascript">
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+        // var tl = new TimelineMax();
+
+
+        tl.to("#schirm", 0.6, { autoAlpha: 0 })
+        .from("#logo", 0.3, { opacity: 0, y: 40}, "-=0.3")
+        .from("#car", 0.5, { scale: 0.4, opacity: 0, x: -300 }, "-=0.1")
+        .from("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.1")
+        .from("#txt02", 0.3, { scale: 0.4, opacity: 0 }, "-=0.1")
+        .from("#phone_num", 0.3, { opacity: 0, y: 20 }, "-=0.1")
+        .from("#phone", 0.3, { opacity: 0, scale: 0.2 }, "-=0.1")
+        .to("#phone", 0.18, { rotation: -20 }, "+=0.5")
+        .to("#phone", 0.18, { rotation: 0 })
+        .to("#phone", 0.18, { rotation: -20 })
+        .to("#phone", 0.18, { rotation: 0 })
+
+        .to("#car", 0.3, { scale: 0.4, opacity: 0, x: -300 }, "+=0.9")
+        .to("#txt01", 0.3, { opacity: 0, scale: 0.4}, "-=0.3")
+        .to("#txt02", 0.3, { scale: 0.4, opacity: 0 }, "-=0.3")
+        .from("#bg02", 0.3, { opacity: 0 }, "-=0.3")
+        .from("#txt03", 0.3, { opacity: 0, y: 20}, "-=0.1")
+        .from("#shield01", 0.4, { width: 0})
+        .from("#shield01_tick", 0.4, { width: 0})
+        .from("#txt04", 0.3, { opacity: 0, y: 20}, "+=0.1")
+        .from("#shield02", 0.4, { width: 0})
+        .from("#shield02_tick", 0.4, { width: 0})
+        .from("#txt05", 0.3, { opacity: 0, y: 20}, "+=0.1")
+        .from("#shield03", 0.4, { width: 0})
+        .from("#shield03_tick", 0.4, { width: 0})
+        .to("#phone", 0.18, { rotation: -20 }, "+=0.5")
+        .to("#phone", 0.18, { rotation: 0 })
+        .to("#phone", 0.18, { rotation: -20 })
+        .to("#phone", 0.18, { rotation: 0 })
+
+        .to(".shield", 0.3, { opacity: 0}, "+=1.2")
+        .to("#txt03", 0.3, { opacity: 0}, "-=0.3")
+        .to("#txt04", 0.3, { opacity: 0}, "-=0.3")
+        .to("#txt05", 0.3, { opacity: 0}, "-=0.3")
+        .to("#bg02", 0.3, { opacity: 0 }, "-=0.3")
+        
+        .from("#txt06", 0.3, { opacity: 0, scale: 0.4})
+        .from("#txt07", 0.3, { opacity: 0, scale: 0.4}, "-=0.1")
+        .from("#txt08", 0.3, { opacity: 0, scale: 0.4}, "-=0.1")
+        .from("#txt09", 0.3, { opacity: 0}, "-=0.1")
+        .to("#phone", 0.18, { rotation: -20 }, "+=0.5")
+        .to("#phone", 0.18, { rotation: 0 })
+        .to("#phone", 0.18, { rotation: -20 })
+        .to("#phone", 0.18, { rotation: 0 })
+        .to("#txt07", 0.3, { scale: 0.96}, "+=0.6")
+        .to("#txt07", 0.3, { scale: 1})
+
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+
+        <div id="bg01" class="el bg">
+          <img src="bg01.svg" alt="">
+        </div>
+        <div id="bg02" class="el bg">
+          <img src="bg02.svg" alt="">
+        </div>
+        <div id="car" class="el">
+          <img src="car.svg" alt="">
+        </div>
+        <div id="txt01" class="el">
+          <img src="txt01.svg" alt="">
+        </div>
+        <div id="txt02" class="el">
+          <img src="txt02.svg" alt="">
+        </div>
+
+        <div id="shield01" class="el shield">
+          <img src="shield.svg" alt="" class="el shield_inn">
+        </div>
+        <div id="shield01_tick" class="el shield">
+          <img src="shield_tick.svg" alt="" class="el shield_inn">
+        </div>
+        <div id="shield02" class="el shield">
+          <img src="shield.svg" alt="" class="el shield_inn">
+        </div>
+        <div id="shield02_tick" class="el shield">
+          <img src="shield_tick.svg" alt="" class="el shield_inn">
+        </div>
+        <div id="shield03" class="el shield">
+          <img src="shield.svg" alt="" class="el shield_inn">
+        </div>
+        <div id="shield03_tick" class="el shield">
+          <img src="shield_tick.svg" alt="" class="el shield_inn">
+        </div>
+        <div id="txt03" class="el">
+          <img src="txt03.svg" alt="">
+        </div>
+        <div id="txt04" class="el">
+          <img src="txt04.svg" alt="">
+        </div>
+        <div id="txt05" class="el">
+          <img src="txt05.svg" alt="">
+        </div>
+        <div id="txt06" class="el">
+          <img src="txt06.svg" alt="">
+        </div>
+        <div id="txt07" class="el">
+          <img src="txt07.svg" alt="">
+        </div>
+        <div id="txt08" class="el">
+          <img src="txt08.svg" alt="">
+        </div>
+        <div id="txt09" class="el">
+          <img src="txt09.svg" alt="">
+        </div>
+
+
+        <div id="phone" class="el">
+          <img src="phone.svg" alt="">
+        </div>
+        <div id="phone_num" class="el">
+          <img src="phone_num.svg" alt="">
+        </div>
+        <div id="logo" class="el">
+          <img src="logo.svg" alt="">
+        </div>
+        <div id="legal" class="el">
+          <img src="legal.svg" alt="">
+        </div>
+        <div id="schirm"></div> 
+      </div>
+    </a>
+  </body>
+</html>
